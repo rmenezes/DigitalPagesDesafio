@@ -28,6 +28,7 @@ namespace DigitalPages.Marvel.Droid
 		{
 			global::ModernHttpClient.Resource.String.library_name = global::DigitalPages.Marvel.Droid.Resource.String.library_name;
 			global::Splat.Resource.String.library_name = global::DigitalPages.Marvel.Droid.Resource.String.library_name;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::DigitalPages.Marvel.Droid.Resource.Attribute.actionBarSize;
 			global::AndroidHUD.Resource.Attribute.ahBarColor = global::DigitalPages.Marvel.Droid.Resource.Attribute.ahBarColor;
 			global::AndroidHUD.Resource.Attribute.ahBarLength = global::DigitalPages.Marvel.Droid.Resource.Attribute.ahBarLength;
 			global::AndroidHUD.Resource.Attribute.ahBarWidth = global::DigitalPages.Marvel.Droid.Resource.Attribute.ahBarWidth;
@@ -65,7 +66,6 @@ namespace DigitalPages.Marvel.Droid
 			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahText = global::DigitalPages.Marvel.Droid.Resource.Styleable.ProgressWheel_ahText;
 			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextColor = global::DigitalPages.Marvel.Droid.Resource.Styleable.ProgressWheel_ahTextColor;
 			global::AndroidHUD.Resource.Styleable.ProgressWheel_ahTextSize = global::DigitalPages.Marvel.Droid.Resource.Styleable.ProgressWheel_ahTextSize;
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::DigitalPages.Marvel.Droid.Resource.Attribute.actionBarSize;
 		}
 		
 		public partial class Animation

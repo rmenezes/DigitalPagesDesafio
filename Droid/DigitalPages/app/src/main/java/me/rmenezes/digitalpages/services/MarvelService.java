@@ -18,8 +18,8 @@ public interface MarvelService {
     Call<Object> getCharacters(@Query("apikey") String apikey, @Query("ts")String ts, @Query("hash")String hash);
 
     @GET("/{id}")
-    Call<Object> getDetails(@Path("id") int id, @Query("apikey") String apikey, @Query("ts")String ts, @Query("hash")String hash);
+    Call<Object> getDetails(@Path("id") long id, @Query("apikey") String apikey, @Query("ts")String ts, @Query("hash")String hash);
 
     @GET("/{id}/comics?orderBy=title&format=comic&formatType=comic&noVariants=true")
-    Call<Object> getComicsByIdCharacters(@Path("id") int id, @Query("apikey") String apikey, @Query("ts")String ts, @Query("hash")String hash);
+    Call<Object> getComicsByIdCharacters(@Path("id") long id, @Query("apikey") String apikey, @Query("ts")String ts, @Query("hash")String hash);
 }

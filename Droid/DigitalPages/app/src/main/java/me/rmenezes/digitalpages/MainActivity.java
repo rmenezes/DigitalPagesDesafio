@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private final String apiUrl = "";
     private final String ts = "";
     private final String apiPrivateKey = "";
+    public String message;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,14 +48,21 @@ public class MainActivity extends AppCompatActivity {
 //                        } else {
 //                            MainActivity.this.showToast(response);
 //                        }
+                        MainActivity.this.message = response;
+                        showToast();
                     }
                 });
             }
         });
     }
 
-    public void showToast(String message) {
-        Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
+    public void showToast() {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                Toast.makeText(getApplicationContext(), MainActivity.this.message, Toast.LENGTH_LONG).show();
+            }
+        });
     }
 
     public static final String md5(final String s) {

@@ -54,7 +54,7 @@ namespace DigitalPages.Marvel.iOS.Services
 				throw ex;
 			}
 
-			return null;
+			return new Character();
 		}
 
 		public async Task<ICollection<Character>> GetCharacters(string name = "", int skip = 0, int limit = 20)

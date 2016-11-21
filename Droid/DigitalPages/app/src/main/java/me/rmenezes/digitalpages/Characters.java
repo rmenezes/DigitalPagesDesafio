@@ -64,22 +64,48 @@ public class Characters {
         }
     }
 
-    public String getDetails(int id) {
-//        try {
-//            Response<String> response = service.details(id, apiUrl).execute();
-//
-//            if(!response.isSuccessful())
-//                return "";
-//
-//            return response.body();
-//
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//
-//            return "";
-//        }
+    public String getDetails(long id) {
+        try {
+            Response<Object> response;
+            Call<Object> call = service.getDetails(id, apiKey, ts, hash);
 
-        return "";
+            response = call.execute();
+
+            if(!response.isSuccessful())
+                return response.message();
+
+            Gson gson = new Gson();
+
+            return gson.toJson(response.body());
+
+        } catch (IOException e) {
+            return e.getMessage();
+        }
+        catch (RuntimeException e) {
+            return e.getMessage();
+        }
+    }
+
+    public String getComicsByIdCharacter(long id) {
+        try {
+            Response<Object> response;
+            Call<Object> call = service.getComicsByIdCharacters(id, apiKey, ts, hash);
+
+            response = call.execute();
+
+            if(!response.isSuccessful())
+                return response.message();
+
+            Gson gson = new Gson();
+
+            return gson.toJson(response.body());
+
+        } catch (IOException e) {
+            return e.getMessage();
+        }
+        catch (RuntimeException e) {
+            return e.getMessage();
+        }
     }
 
     public String getApiKey() {
