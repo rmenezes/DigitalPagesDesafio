@@ -18,10 +18,10 @@ import java.security.NoSuchAlgorithmException;
 
 public class MainActivity extends AppCompatActivity {
 
-    private final String apiKey = "d5c2d01b2fa66ee7eea7f6ee9c6c66fe";
-    private final String apiUrl = "https://gateway.marvel.com:443/v1/public/characters/";
-    private final String ts = "1234";
-    private final String apiPrivateKey = "8c98082304f2f476b6a49509befff8feb8c1f02c";
+    private final String apiKey = "";
+    private final String apiUrl = "";
+    private final String ts = "";
+    private final String apiPrivateKey = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
