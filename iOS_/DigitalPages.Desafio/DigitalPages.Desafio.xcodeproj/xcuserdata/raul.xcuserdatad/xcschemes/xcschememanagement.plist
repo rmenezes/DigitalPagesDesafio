@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>DigitalPages.Desafio.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>DigitalPages.Marvel.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>UniversalLib.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>C4A17BC51DD7A70800604A77</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C4A17BDD1DD7C7DC00604A77</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C4B4E1DC1DE0F2D70024722C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C4B4E1F41DE0F2D70024722C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C4B4E1FF1DE0F2D80024722C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

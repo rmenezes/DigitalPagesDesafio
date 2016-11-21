@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVr-Xg-Bn2">
+                                <rect key="frame" x="16" y="275" width="343" height="30"/>
+                                <state key="normal" title="GetAll"/>
+                                <connections>
+                                    <action selector="BtGetData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PPm-vh-QD5"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iAP-BL-bfA">
+                                <rect key="frame" x="16" y="237" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Era-S7-pvW">
+                                <rect key="frame" x="16" y="313" width="343" height="30"/>
+                                <state key="normal" title="GetByID"/>
+                                <connections>
+                                    <action selector="BtGetById:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vlr-0M-smJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewF-ux-Laa">
+                                <rect key="frame" x="16" y="351" width="343" height="30"/>
+                                <state key="normal" title="GetComicsByIdCharacter"/>
+                                <connections>
+                                    <action selector="BtGetComics:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CTd-zp-6Ek"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iAP-BL-bfA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2tT-kc-NE2"/>
+                            <constraint firstItem="ewF-ux-Laa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9Dc-pf-bim"/>
+                            <constraint firstItem="ewF-ux-Laa" firstAttribute="top" secondItem="Era-S7-pvW" secondAttribute="bottom" constant="8" id="9Te-sq-39i"/>
+                            <constraint firstItem="UVr-Xg-Bn2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Ot0-0m-lnW"/>
+                            <constraint firstItem="UVr-Xg-Bn2" firstAttribute="top" secondItem="iAP-BL-bfA" secondAttribute="bottom" constant="8" id="P0R-3g-zUC"/>
+                            <constraint firstItem="Era-S7-pvW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="UGA-d8-BEU"/>
+                            <constraint firstItem="Era-S7-pvW" firstAttribute="top" secondItem="UVr-Xg-Bn2" secondAttribute="bottom" constant="8" id="b0n-ud-GiO"/>
+                            <constraint firstItem="Era-S7-pvW" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ce5-Xh-E8A"/>
+                            <constraint firstItem="iAP-BL-bfA" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="lYO-NR-bMm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UVr-Xg-Bn2" secondAttribute="bottom" constant="362" id="nqT-zS-ws8"/>
+                            <constraint firstItem="UVr-Xg-Bn2" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="qAc-bp-HfR"/>
+                            <constraint firstItem="ewF-ux-Laa" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="qon-wf-kfP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="BtGetData" destination="UVr-Xg-Bn2" id="phU-Dy-d9W"/>
+                        <outlet property="TbSearch" destination="iAP-BL-bfA" id="fD2-Wr-28r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="124.58770614692655"/>
+        </scene>
+    </scenes>
+</document>
