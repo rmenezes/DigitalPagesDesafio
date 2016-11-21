@@ -1,4 +1,6 @@
 marinStudio ###
 bin/
 obj/
+build/
+Carthage/
 *.userprefs
