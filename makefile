@@ -18,7 +18,7 @@ $(TARGET)-iphone.framework:
 	$(XBUILD) ONLY_ACTIVE_ARCH=NO -project $(PROJECT) -target $(TARGET) -sdk iphoneos -configuration Release clean build
 	mv $(PROJECT_ROOT)/build/Release-iphoneos/$(TARGET).framework $(TARGET)-iphone.framework
 
-$(TARGET).framework: $(TARGET)-simulator.framework $(TARGET)-iphone.framework $(BINDING_PROJECT)/Generated_ApiDefinitions.cs
+$(TARGET).framework: $(TARGET)-simulator.framework $(TARGET)-iphone.framework 
 	cp -R $(TARGET)-iphone.framework ./$(TARGET).framework
 	rm ./$(TARGET).framework/$(TARGET)
 	lipo -create -output $(TARGET).framework/$(TARGET) $(TARGET)-iphone.framework/$(TARGET) $(TARGET)-simulator.framework/$(TARGET)
