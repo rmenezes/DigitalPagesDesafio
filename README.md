@@ -9,5 +9,7 @@
 - AFNetworking (Objective-C) -> https://github.com/AFNetworking/AFNetworking
 - Acr.Dialogs (C#) -> https://github.com/aritchie/acr-xamarin-forms
 - XamarinForms (C#) -> http://www.xamarin.com/forms
+- Prism (C#) -> https://github.com/PrismLibrary/
+- NewtonSoft (C#) -> https://github.com/JamesNK/Newtonsoft.Json
 
 
