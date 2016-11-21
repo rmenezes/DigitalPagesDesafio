@@ -12,4 +12,10 @@
 - Prism (C#) -> https://github.com/PrismLibrary/
 - NewtonSoft (C#) -> https://github.com/JamesNK/Newtonsoft.Json
 
+# Todo List
+
+- Salvar os dados da API em no SQLite e retornar o callback para o aplicativo ao invés de retornar diretamente o Json, isso reduz as chamadas a API que são limitadas. 
+- Implementar testes ao invés de criar uma aplicação em Java/Objective-C para testar os dados.
+- Melhorar o Makefile com link script para o sharpie e gradle.
+
 
