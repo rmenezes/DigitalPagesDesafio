@@ -8,6 +8,6 @@
 - Retrofit (Java) -> http://square.github.io/retrofit/
 - AFNetworking (Objective-C) -> https://github.com/AFNetworking/AFNetworking
 - Acr.Dialogs (C#) -> https://github.com/aritchie/acr-xamarin-forms
-- XamarinForms -> http://www.xamarin.com/forms
+- XamarinForms (C#) -> http://www.xamarin.com/forms
 
 
