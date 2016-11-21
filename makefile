@@ -2,8 +2,8 @@ XBUILD=/Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild
 PROJECT_ROOT=/Users/raul/Projetos/DigitalPages/iOS/DigitalPages.Desafio
 PROJECT=$(PROJECT_ROOT)/DigitalPages.Desafio.xcodeproj
 PROJECT_FILES=$(PROJECT_ROOT)/DigitalPages.Desafio
-PROJET_OUTPUT=/Users/raul/Projetos/DigitalPages/
-PROJET_FOLDER_OUTPUT=$(PROJET_OUTPUT)/DigitalPages.Marvel/DigitalPages.Marvel.Api.iOS
+PROJET_OUTPUT=/Users/raul/Projetos/DigitalPages
+PROJET_FOLDER_OUTPUT=$(PROJET_OUTPUT)/DigitalPages.Marvel/DigitalPages.Marvel.Api.iOS/
 NAMESPACE=DigitalPages.Marvel.Api.iOS
 TARGET=UniversalLib
 BINDING_PROJECT=DigitalPages.Marvel.iOS.Api
@@ -23,10 +23,8 @@ $(TARGET).framework: $(TARGET)-simulator.framework $(TARGET)-iphone.framework $(
 	rm ./$(TARGET).framework/$(TARGET)
 	lipo -create -output $(TARGET).framework/$(TARGET) $(TARGET)-iphone.framework/$(TARGET) $(TARGET)-simulator.framework/$(TARGET)
 
-$(BINDING_PROJECT)/Generated_ApiDefinitions.cs:
-	 sharpie bind --output=$(PROJET_FOLDER_OUTPUT) --namespace=$(namespace) --sdk=iphoneos10.1 $(PROJECT_FILES)/Characters.h
+sharpie:
+	 sharpie bind --output=$(PROJET_FOLDER_OUTPUT) --namespace=$(NAMESPACE) --sdk=iphoneos10.1 $(PROJECT_FILES)/Characters.h
 
 clean:
-	rm -rf *.framework
-	rm $(BINDING_PROJECT)/Generated_ApiDefinitions.cs
-	rm $(BINDING_PROJECT)/Generated_StructsAndEnums.cs
+	rm -rf *.framework 
