@@ -16,6 +16,6 @@
 
 - Salvar os dados da API no SQLite e retornar o callback para o aplicativo ao invés de retornar diretamente o Json, isso reduz as chamadas a API que são limitadas e aumenta a performance.
 - Implementar testes ao invés de criar uma aplicação em Java/Objective-C para testar os dados.
-- Melhorar o Makefile com link script para o sharpie e gradle.
+- Melhorar o Makefile adicionando build da lib do android
 - Layout.
 
