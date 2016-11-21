@@ -1,0 +1,1 @@
+sharpie bind --output=/Users/raul/Projetos/DigitalPages/DigitalPages.Marvel/DigitalPages.Marvel.Api.iOS/ --namespace=DigitalPages.Marvel.Api.iOS --sdk=iphoneos10.1 /Users/raul/Projetos/DigitalPages/iOS/DigitalPages.Desafio/DigitalPages.Desafio/Characters.h 

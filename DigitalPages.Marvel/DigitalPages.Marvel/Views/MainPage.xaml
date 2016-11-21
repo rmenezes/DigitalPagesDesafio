@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="DigitalPages.Marvel.Views.MainPage"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             Title="Personagens"
+             prism:ViewModelLocator.AutowireViewModel="True">
+
+    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <SearchBar Placeholder="Pesquise por nome ou quadrinho"
+                   SearchCommand="{Binding SearchCommand}"
+                   Text="{Binding Search}"
+                   TextChanged="Handle_TextChanged" />
+        <ListView ItemTapped="Handle_ItemTapped" ItemsSource="{Binding DataSource}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Label Text="{Binding Name}" />
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
